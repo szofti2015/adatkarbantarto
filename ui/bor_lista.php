@@ -39,15 +39,15 @@
             <td style="text-align: center">
                
                 <a href="bor_reszletez.php?id=<?=$bor->getBorId()?>" > 
-                    <img src="../asserts/image/details.jpg" width="15">
+                    <img src="../assets/image/details.jpg" width="15">
                 </a>
                
                 <a href="bor_modosit.php?id=<?=$bor->getBorId()?>" > 
-                    <img src="../asserts/image/edit.jpg" width="15">
+                    <img src="../assets/image/edit.jpg" width="15">
                 </a>
                 
                 <a href="db_delete.php?id=<?=$bor->getBorId()?>">
-                    <img src="../asserts/image/delete.jpg" width="15">
+                    <img src="../assets/image/delete.jpg" width="15">
                 </a>
                 
             </td>
