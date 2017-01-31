@@ -13,11 +13,9 @@
             $this->borArray = $borArray;
         }
 
+         public function createTable($cssClass = null, $header = ['Bor neve', 'Típus', 'Palackozva', 'Műveletek']){
 
-
-         public function createTable($header = ['Bor neve', 'Típus', 'palackozva', 'Műveletek'], $style= null){
-
-            $html = "<table>";
+            $html = "<table class='$cssClass'>";
 
             if($header && is_array($header)) {
                 $head = "<tr>";
@@ -35,8 +33,8 @@
             foreach($this->borArray as $bor){
             $tableBody.="<tr>";
                 $tableBody.="<td>{$bor->getBorNev()}</td>";
-                $tableBody.="<td>{$bor->getBorPalackozva()}</td>";
                 $tableBody.="<td>{$bor->getBorTipus()}</td>";
+                $tableBody.="<td>{$bor->getBorPalackozva()}</td>";
                 $tableBody.="<td>{$bor->getLink()}</td>";
             $tableBody.="</tr>";
             }

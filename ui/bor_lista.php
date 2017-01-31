@@ -14,7 +14,7 @@
         
         <h1>Borokat karbantartó alkalmazás</h1>  
 
-        <?=$presenter->createTable()?>
+        <?=$presenter->createTable('list')?>
 
         <div>
            <h3>Adatok összesítése</h3>

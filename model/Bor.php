@@ -15,7 +15,7 @@
         public function __construct($borId, $borNev, $borPalackozva, $borTipus) {
             $this->borId = $borId;
             $this->borNev = $borNev;
-            $this->borPalackozva = $borTipus;
+            $this->borPalackozva = $borPalackozva;
             $this->borTipus = $borTipus;
         }
         
