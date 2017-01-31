@@ -31,24 +31,10 @@
             <td>
                 <?=($bor->getBorPalackozva()) ? $bor->getBorPalackozva() : "Nincs érték" ?>
             </td> 
-         
-            
-               
-            
-            
+
             <td style="text-align: center">
                
-                <a href="bor_reszletez.php?id=<?=$bor->getBorId()?>" > 
-                    <img src="../assets/image/details.jpg" width="15">
-                </a>
-               
-                <a href="bor_modosit.php?id=<?=$bor->getBorId()?>" > 
-                    <img src="../assets/image/edit.jpg" width="15">
-                </a>
-                
-                <a href="db_delete.php?id=<?=$bor->getBorId()?>">
-                    <img src="../assets/image/delete.jpg" width="15">
-                </a>
+                <?=$bor->getLink()?>
                 
             </td>
         </tr>
